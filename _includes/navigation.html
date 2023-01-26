@@ -1,0 +1,14 @@
+<nav id="main-nav">
+    <ul>
+    {% for item in site.data.navigation %}
+        <li>
+            <a class="nav-item" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+                {{ item.name }}
+            </a>
+        </li>
+    {% endfor %}
+        <li style="float:right">
+            <span class="nav-item nav-item-highlight">Younhun Kim</span>
+        </li>
+    </ul>
+</nav>
